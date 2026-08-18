@@ -1,16 +1,111 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ProBeton</title>
-  <meta name="description" content="Official developer website for the ProBeton Android application.">
+  <meta name="theme-color" content="#ffffff">
+  <meta id="page-description" name="description" content="SunFlow допомагає підібрати сонячні панелі, акумулятор та інвертор, оцінити резерв і окупність домашньої сонячної станції.">
+  <title>SunFlow — розрахунок сонячної системи</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>ProBeton</h1>
-    <p>Official developer website for the ProBeton Android application.</p>
-    <p><a href="https://kretuno.github.io/probeton-privacy-policy/">Privacy policy</a></p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SunFlow">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="8"></circle><path d="M24 3v7M24 38v7M3 24h7M38 24h7M9.2 9.2l5 5M33.8 33.8l5 5M38.8 9.2l-5 5M14.2 33.8l-5 5"></path></svg>
+      <span>SunFlow</span>
+    </a>
+    <nav aria-label="Основна навігація">
+      <a href="#features" data-i18n="navFeatures">Можливості</a>
+      <a href="#workflow" data-i18n="navHow">Як працює</a>
+      <a href="#apps" data-i18n="navApps">Застосунки</a>
+    </nav>
+    <div class="header-tools">
+      <div class="language-switch" role="group" aria-label="Мова">
+        <button type="button" data-language="uk" class="active">UA</button>
+        <button type="button" data-language="ru">RU</button>
+      </div>
+      <a class="header-action" href="https://play.google.com/store/apps/details?id=com.osipix.sunflow">Google Play</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img class="hero-media" src="assets/sunflow-hero.jpg" alt="Будинок із сонячними панелями та екран застосунку SunFlow" data-i18n-alt="heroAlt" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 data-i18n="heroTitle">Сонячна система,<br>розрахована для вашого дому</h1>
+        <p data-i18n="heroText">Підберіть панелі, акумулятор та інвертор. Оцініть резерв під час відключення й орієнтовну окупність.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.osipix.sunflow">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.7a2 2 0 0 0-.5 1.4v15.8c0 .5.2 1 .5 1.4l9.1-9.3L3.6 2.7Zm10.3 10.5-2.4 2.5 3.1 3.2 4.4-2.5-5.1-3.2Zm6.6-2.4-4.6-2.6-3.2 3.2 2.6 2.6 5.2-3.2ZM4.9 22l8.6-5.3-3.2-3.3L4.9 22Z"></path></svg>
+            <span data-i18n="download">Завантажити в Google Play</span>
+          </a>
+          <a class="button button-secondary" href="#features" data-i18n="learn">Дізнатися про можливості</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="section-heading">
+        <h2 data-i18n="featuresTitle">Усе для вашого сонячного проєкту</h2>
+        <p data-i18n="featuresLead">Від побутового навантаження до зрозумілої конфігурації обладнання — в одному проєкті на телефоні.</p>
+      </div>
+      <div class="feature-list">
+        <article class="feature">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30h31l5 21H13L8 30Zm4 7h29M16 30l4 21M29 30l3 21M45 17v7M54 20l-5 5M36 20l5 5"></path><circle cx="45" cy="11" r="5"></circle></svg>
+          <div><h3 data-i18n="equipmentTitle">Підбір обладнання</h3><p data-i18n="equipmentText">Панелі, акумулятор та інвертор під ваше навантаження.</p></div>
+        </article>
+        <article class="feature">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 29 32 9l24 20v26H8V29Zm18 26V39h12v16M43 34h8v14h-8z"></path><path class="accent" d="m29 25-5 10h7l-3 10 11-14h-7l4-6"></path></svg>
+          <div><h3 data-i18n="backupTitle">Резерв під час відключення</h3><p data-i18n="backupText">Оцінка часу автономної роботи вашого дому.</p></div>
+        </article>
+        <article class="feature">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 6h29l8 8v44H14V6Zm29 0v10h8M22 46h21M22 38h7M34 38h9M22 30h21"></path><circle class="accent" cx="45" cy="46" r="10"></circle></svg>
+          <div><h3 data-i18n="economyTitle">Економіка системи</h3><p data-i18n="economyText">Орієнтовна вартість і строк окупності.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow">
+      <div class="section-heading"><h2 data-i18n="workflowTitle">Від навантаження до готового проєкту</h2></div>
+      <ol class="steps">
+        <li><span>1</span><div><strong data-i18n="step1Title">Додайте прилади</strong><p data-i18n="step1Text">Укажіть, чим ви користуєтеся вдома та як довго.</p></div></li>
+        <li><span>2</span><div><strong data-i18n="step2Title">Виберіть обладнання</strong><p data-i18n="step2Text">SunFlow допоможе зібрати відповідну конфігурацію.</p></div></li>
+        <li><span>3</span><div><strong data-i18n="step3Title">Збережіть проєкт</strong><p data-i18n="step3Text">Порівнюйте варіанти та повертайтеся до розрахунків.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="apps section" id="apps">
+      <div class="app-main">
+        <div class="app-symbol solar-symbol" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="17" cy="16" r="7"></circle><path d="M17 2v5M17 25v5M3 16h5M26 16h5M7 6l4 4M27 6l-4 4M11 22l-4 4"></path><path d="M17 31h29l-4 17H13l4-17Zm6 0-2 17m11-17v17m9-11H15m28 6H14"></path></svg></div>
+        <div><h2>SunFlow</h2><p data-i18n="sunflowDescription">Підбір і розрахунок домашньої сонячної станції.</p></div>
+        <a class="button button-outline" href="https://play.google.com/store/apps/details?id=com.osipix.sunflow" data-i18n="openPlay">Відкрити в Google Play</a>
+      </div>
+      <div class="app-secondary">
+        <div class="concrete-symbol" aria-hidden="true">P</div>
+        <div><h3>ProBeton</h3><p data-i18n="probetonDescription">Розрахунок складу та вартості бетону.</p></div>
+        <a href="https://play.google.com/store/apps/details?id=com.eduard.cement" data-i18n="openPlay">Відкрити в Google Play</a>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div><h2 data-i18n="ctaTitle">Почніть проєктувати свою сонячну систему</h2><p data-i18n="ctaText">Безкоштовний Android-застосунок для власників будинків, монтажників і консультантів.</p></div>
+      <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.osipix.sunflow" data-i18n="downloadSunflow">Завантажити SunFlow</a>
+    </section>
   </main>
+
+  <footer>
+    <a class="brand" href="#top"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="8"></circle><path d="M24 3v7M24 38v7M3 24h7M38 24h7M9.2 9.2l5 5M33.8 33.8l5 5M38.8 9.2l-5 5M14.2 33.8l-5 5"></path></svg><span>SunFlow</span></a>
+    <div class="footer-links">
+      <a href="https://kretuno.github.io/sunflow-privacy/" data-i18n="privacy">Політика конфіденційності</a>
+      <a href="/app-ads.txt">app-ads.txt</a>
+      <a href="mailto:osipixua@gmail.com" data-i18n="contact">Зв’язатися</a>
+    </div>
+    <p>© 2026 Osipov E.</p>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>
