@@ -1,74 +1,15 @@
-const translations = {
-  uk: {
-    title: "SunFlow — розрахунок сонячної системи",
-    description: "SunFlow допомагає підібрати сонячні панелі, акумулятор та інвертор, оцінити резерв і окупність домашньої сонячної станції.",
-    navFeatures: "Можливості", navHow: "Як працює", navApps: "Застосунки",
-    heroTitle: "Сонячна система,<br>розрахована для вашого дому",
-    heroText: "Підберіть панелі, акумулятор та інвертор. Оцініть резерв під час відключення й орієнтовну окупність.",
-    heroAlt: "Будинок із сонячними панелями та екран застосунку SunFlow",
-    download: "Завантажити в Google Play", learn: "Дізнатися про можливості",
-    featuresTitle: "Усе для вашого сонячного проєкту",
-    featuresLead: "Від побутового навантаження до зрозумілої конфігурації обладнання — в одному проєкті на телефоні.",
-    equipmentTitle: "Підбір обладнання", equipmentText: "Панелі, акумулятор та інвертор під ваше навантаження.",
-    backupTitle: "Резерв під час відключення", backupText: "Оцінка часу автономної роботи вашого дому.",
-    economyTitle: "Економіка системи", economyText: "Орієнтовна вартість і строк окупності.",
-    workflowTitle: "Від навантаження до готового проєкту",
-    step1Title: "Додайте прилади", step1Text: "Укажіть, чим ви користуєтеся вдома та як довго.",
-    step2Title: "Виберіть обладнання", step2Text: "SunFlow допоможе зібрати відповідну конфігурацію.",
-    step3Title: "Збережіть проєкт", step3Text: "Порівнюйте варіанти та повертайтеся до розрахунків.",
-    sunflowDescription: "Підбір і розрахунок домашньої сонячної станції.",
-    probetonDescription: "Розрахунок складу та вартості бетону.", openPlay: "Відкрити в Google Play",
-    ctaTitle: "Почніть проєктувати свою сонячну систему",
-    ctaText: "Безкоштовний Android-застосунок для власників будинків, монтажників і консультантів.",
-    downloadSunflow: "Завантажити SunFlow", privacy: "Політика конфіденційності", contact: "Зв’язатися"
-  },
-  ru: {
-    title: "SunFlow — расчёт солнечной системы",
-    description: "SunFlow помогает подобрать солнечные панели, аккумулятор и инвертор, оценить резерв и окупаемость домашней солнечной станции.",
-    navFeatures: "Возможности", navHow: "Как работает", navApps: "Приложения",
-    heroTitle: "Солнечная система,<br>рассчитанная под ваш дом",
-    heroText: "Подберите панели, аккумулятор и инвертор. Оцените резерв при отключении и ориентировочную окупаемость.",
-    heroAlt: "Дом с солнечными панелями и экран приложения SunFlow",
-    download: "Скачать в Google Play", learn: "Узнать возможности",
-    featuresTitle: "Всё для вашего солнечного проекта",
-    featuresLead: "От бытовой нагрузки до понятной конфигурации оборудования — в одном проекте на телефоне.",
-    equipmentTitle: "Подбор оборудования", equipmentText: "Панели, аккумулятор и инвертор под вашу нагрузку.",
-    backupTitle: "Резерв при отключении", backupText: "Оценка времени автономной работы вашего дома.",
-    economyTitle: "Экономика системы", economyText: "Ориентировочная стоимость и срок окупаемости.",
-    workflowTitle: "От нагрузки до готового проекта",
-    step1Title: "Добавьте приборы", step1Text: "Укажите, чем вы пользуетесь дома и как долго.",
-    step2Title: "Выберите оборудование", step2Text: "SunFlow поможет собрать подходящую конфигурацию.",
-    step3Title: "Сохраните проект", step3Text: "Сравнивайте варианты и возвращайтесь к расчётам.",
-    sunflowDescription: "Подбор и расчёт домашней солнечной станции.",
-    probetonDescription: "Расчёт состава и стоимости бетона.", openPlay: "Открыть в Google Play",
-    ctaTitle: "Начните проектировать свою солнечную систему",
-    ctaText: "Бесплатное Android-приложение для владельцев домов, монтажников и консультантов.",
-    downloadSunflow: "Скачать SunFlow", privacy: "Политика конфиденциальности", contact: "Связаться"
-  }
+const products={
+sunflow:{play:"https://play.google.com/store/apps/details?id=com.osipix.sunflow",privacy:"https://kretuno.github.io/sunflow-privacy/",image:"assets/sunflow-hero.jpg",uk:{title:"SunFlow — розрахунок сонячної системи",description:"SunFlow допомагає підібрати сонячні панелі, акумулятор та інвертор, оцінити резерв і окупність домашньої сонячної станції.",eyebrow:"Розумний помічник для енергонезалежності",heroTitle:"Сонячна система,<br>розрахована для вашого дому",heroText:"Підберіть панелі, акумулятор та інвертор. Оцініть резерв під час відключення й орієнтовну окупність.",heroAlt:"Будинок із сонячними панелями та екран застосунку SunFlow",featuresTitle:"Усе для вашого сонячного проєкту",featuresLead:"Від побутового навантаження до зрозумілої конфігурації обладнання — в одному проєкті на телефоні.",feature1Title:"Підбір обладнання",feature1Text:"Панелі, акумулятор та інвертор під ваше навантаження.",feature2Title:"Резерв під час відключення",feature2Text:"Оцінка часу автономної роботи вашого дому.",feature3Title:"Економіка системи",feature3Text:"Орієнтовна вартість і строк окупності.",workflowTitle:"Від навантаження до готового проєкту",step1Title:"Додайте прилади",step1Text:"Укажіть, чим ви користуєтеся вдома та як довго.",step2Title:"Виберіть обладнання",step2Text:"SunFlow допоможе зібрати відповідну конфігурацію.",step3Title:"Збережіть проєкт",step3Text:"Порівнюйте варіанти та повертайтеся до розрахунків.",ctaTitle:"Почніть проєктувати свою сонячну систему",ctaText:"Безкоштовний Android-застосунок для власників будинків, монтажників і консультантів.",downloadApp:"Завантажити SunFlow"},ru:{title:"SunFlow — расчёт солнечной системы",description:"SunFlow помогает подобрать солнечные панели, аккумулятор и инвертор, оценить резерв и окупаемость домашней солнечной станции.",eyebrow:"Умный помощник для энергонезависимости",heroTitle:"Солнечная система,<br>рассчитанная под ваш дом",heroText:"Подберите панели, аккумулятор и инвертор. Оцените резерв при отключении и ориентировочную окупаемость.",heroAlt:"Дом с солнечными панелями и экран приложения SunFlow",featuresTitle:"Всё для вашего солнечного проекта",featuresLead:"От бытовой нагрузки до понятной конфигурации оборудования — в одном проекте на телефоне.",feature1Title:"Подбор оборудования",feature1Text:"Панели, аккумулятор и инвертор под вашу нагрузку.",feature2Title:"Резерв при отключении",feature2Text:"Оценка времени автономной работы вашего дома.",feature3Title:"Экономика системы",feature3Text:"Ориентировочная стоимость и срок окупаемости.",workflowTitle:"От нагрузки до готового проекта",step1Title:"Добавьте приборы",step1Text:"Укажите, чем вы пользуетесь дома и как долго.",step2Title:"Выберите оборудование",step2Text:"SunFlow поможет собрать подходящую конфигурацию.",step3Title:"Сохраните проект",step3Text:"Сравнивайте варианты и возвращайтесь к расчётам.",ctaTitle:"Начните проектировать свою солнечную систему",ctaText:"Бесплатное Android-приложение для владельцев домов, монтажников и консультантов.",downloadApp:"Скачать SunFlow"}},
+probeton:{play:"https://play.google.com/store/apps/details?id=com.eduard.cement",privacy:"https://kretuno.github.io/probeton-privacy/",image:"assets/probeton-hero.jpg",uk:{title:"ProBeton — точний розрахунок бетону",description:"ProBeton розраховує склад, пропорції та вартість матеріалів для бетонних робіт.",eyebrow:"Калькулятор бетону для будівництва",heroTitle:"Точний розрахунок бетону<br>для вашого проєкту",heroText:"Розрахуйте склад, пропорції та вартість матеріалів для фундаменту, стяжки, майданчика й інших бетонних робіт.",heroAlt:"Бетонний фундамент і екран застосунку ProBeton",featuresTitle:"Усе для точного розрахунку бетону",featuresLead:"Від потрібного об’єму до готового рецепта й кошторису матеріалів — у кілька зрозумілих кроків.",feature1Title:"Об’єм і пропорції",feature1Text:"Розрахунок складу суміші з урахуванням марки бетону й типу цементу.",feature2Title:"Готові рецепти",feature2Text:"Зручні пресети для фундаменту, стяжки, майданчика та інших робіт.",feature3Title:"Вартість матеріалів",feature3Text:"Додайте актуальні ціни та одразу отримайте орієнтовний кошторис.",workflowTitle:"Від об’єму до готового кошторису",step1Title:"Оберіть конструкцію",step1Text:"Задайте форму, розміри та потрібну марку бетону.",step2Title:"Отримайте рецепт",step2Text:"ProBeton розрахує цемент, пісок, щебінь і воду.",step3Title:"Збережіть результат",step3Text:"Порівнюйте вартість і повертайтеся до збережених рецептів.",ctaTitle:"Розрахуйте бетон перед початком робіт",ctaText:"Безкоштовний Android-застосунок для приватного будівництва, майстрів і виконробів.",downloadApp:"Завантажити ProBeton"},ru:{title:"ProBeton — точный расчёт бетона",description:"ProBeton рассчитывает состав, пропорции и стоимость материалов для бетонных работ.",eyebrow:"Калькулятор бетона для строительства",heroTitle:"Точный расчёт бетона<br>для вашего проекта",heroText:"Рассчитайте состав, пропорции и стоимость материалов для фундамента, стяжки, площадки и других бетонных работ.",heroAlt:"Бетонный фундамент и экран приложения ProBeton",featuresTitle:"Всё для точного расчёта бетона",featuresLead:"От нужного объёма до готового рецепта и сметы материалов — за несколько понятных шагов.",feature1Title:"Объём и пропорции",feature1Text:"Расчёт состава смеси с учётом марки бетона и типа цемента.",feature2Title:"Готовые рецепты",feature2Text:"Удобные пресеты для фундамента, стяжки, площадки и других работ.",feature3Title:"Стоимость материалов",feature3Text:"Добавьте актуальные цены и сразу получите ориентировочную смету.",workflowTitle:"От объёма до готовой сметы",step1Title:"Выберите конструкцию",step1Text:"Задайте форму, размеры и нужную марку бетона.",step2Title:"Получите рецепт",step2Text:"ProBeton рассчитает цемент, песок, щебень и воду.",step3Title:"Сохраните результат",step3Text:"Сравнивайте стоимость и возвращайтесь к сохранённым рецептам.",ctaTitle:"Рассчитайте бетон до начала работ",ctaText:"Бесплатное Android-приложение для частного строительства, мастеров и прорабов.",downloadApp:"Скачать ProBeton"}}
 };
-
-function setLanguage(language) {
-  const copy = translations[language] || translations.uk;
-  document.documentElement.lang = language;
-  document.title = copy.title;
-  document.querySelector("#page-description").content = copy.description;
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const value = copy[element.dataset.i18n];
-    if (value) element.innerHTML = value;
-  });
-  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
-    const value = copy[element.dataset.i18nAlt];
-    if (value) element.alt = value;
-  });
-  document.querySelectorAll("[data-language]").forEach((button) => {
-    const active = button.dataset.language === language;
-    button.classList.toggle("active", active);
-    button.setAttribute("aria-pressed", String(active));
-  });
-  localStorage.setItem("sunflow-language", language);
-}
-
-document.querySelectorAll("[data-language]").forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.language));
-});
-setLanguage(localStorage.getItem("sunflow-language") || "uk");
+products.probeton.privacy="https://kretuno.github.io/probeton-privacy-policy/";
+const common={uk:{navFeatures:"Можливості",navHow:"Як працює",download:"Завантажити в Google Play",learn:"Дізнатися про можливості",sectionKicker:"МОЖЛИВОСТІ",workflowKicker:"ТРИ КРОКИ",familyKicker:"OSIPIX APPS",familyTitle:"Два помічники для точних рішень",familyText:"Перемикайтеся між застосунками й оберіть потрібний інструмент для свого проєкту.",sunflowDescription:"Підбір і розрахунок домашньої сонячної станції.",probetonDescription:"Розрахунок складу та вартості бетону.",privacy:"Політика конфіденційності",contact:"Зв’язатися"},ru:{navFeatures:"Возможности",navHow:"Как работает",download:"Скачать в Google Play",learn:"Узнать возможности",sectionKicker:"ВОЗМОЖНОСТИ",workflowKicker:"ТРИ ШАГА",familyKicker:"OSIPIX APPS",familyTitle:"Два помощника для точных решений",familyText:"Переключайтесь между приложениями и выберите нужный инструмент для своего проекта.",sunflowDescription:"Подбор и расчёт домашней солнечной станции.",probetonDescription:"Расчёт состава и стоимости бетона.",privacy:"Политика конфиденциальности",contact:"Связаться"}};
+let language=localStorage.getItem("osipix-language")||"uk";
+let product=new URLSearchParams(location.search).get("app")||localStorage.getItem("osipix-product")||"sunflow";
+if(!products[product])product="sunflow";
+function render(){const item=products[product],copy={...common[language],...item[language]};document.body.dataset.product=product;document.documentElement.lang=language;document.title=copy.title;document.querySelector("#page-description").content=copy.description;document.querySelector(".hero-media").src=item.image;document.querySelectorAll(".play-link").forEach(link=>link.href=item.play);document.querySelector(".privacy-link").href=item.privacy;document.querySelectorAll("[data-i18n]").forEach(el=>{if(copy[el.dataset.i18n])el.innerHTML=copy[el.dataset.i18n]});document.querySelectorAll("[data-i18n-alt]").forEach(el=>{if(copy[el.dataset.i18nAlt])el.alt=copy[el.dataset.i18nAlt]});document.querySelectorAll("[data-language]").forEach(button=>{const active=button.dataset.language===language;button.classList.toggle("active",active);button.setAttribute("aria-pressed",String(active))});document.querySelectorAll("[data-product-button]").forEach(button=>{const active=button.dataset.productButton===product;button.classList.toggle("active",active);button.setAttribute("aria-pressed",String(active))});document.querySelectorAll("[data-product-card]").forEach(button=>button.classList.toggle("active",button.dataset.productCard===product));localStorage.setItem("osipix-language",language);localStorage.setItem("osipix-product",product)}
+function chooseProduct(value,scrollToTop=false){product=value;const url=new URL(location.href);url.searchParams.set("app",product);history.replaceState({},"",url);render();if(scrollToTop)scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll("[data-language]").forEach(button=>button.addEventListener("click",()=>{language=button.dataset.language;render()}));
+document.querySelectorAll("[data-product-button]").forEach(button=>button.addEventListener("click",()=>chooseProduct(button.dataset.productButton)));
+document.querySelectorAll("[data-product-card]").forEach(button=>button.addEventListener("click",()=>chooseProduct(button.dataset.productCard,true)));
+render();
